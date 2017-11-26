@@ -8,12 +8,13 @@
 
 /* Begin PBXBuildFile section */
 		89AD5EB21FCAF5DE00F82AF2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89AD5EB11FCAF5DE00F82AF2 /* AppDelegate.swift */; };
-		89AD5EB41FCAF5DE00F82AF2 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89AD5EB31FCAF5DE00F82AF2 /* ViewController.swift */; };
+		89AD5EB41FCAF5DE00F82AF2 /* CategoriesVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89AD5EB31FCAF5DE00F82AF2 /* CategoriesVC.swift */; };
 		89AD5EB71FCAF5DE00F82AF2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 89AD5EB51FCAF5DE00F82AF2 /* Main.storyboard */; };
 		89AD5EB91FCAF5DE00F82AF2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 89AD5EB81FCAF5DE00F82AF2 /* Assets.xcassets */; };
 		89AD5EBC1FCAF5DE00F82AF2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 89AD5EBA1FCAF5DE00F82AF2 /* LaunchScreen.storyboard */; };
 		89AD5EC71FCAF5DE00F82AF2 /* swagTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89AD5EC61FCAF5DE00F82AF2 /* swagTests.swift */; };
 		89AD5ED21FCAF5DE00F82AF2 /* swagUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89AD5ED11FCAF5DE00F82AF2 /* swagUITests.swift */; };
+		89C1654A1FCB001300E59D4D /* CategoryCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89C165491FCB001300E59D4D /* CategoryCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,7 +37,7 @@
 /* Begin PBXFileReference section */
 		89AD5EAE1FCAF5DE00F82AF2 /* swag.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = swag.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		89AD5EB11FCAF5DE00F82AF2 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		89AD5EB31FCAF5DE00F82AF2 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		89AD5EB31FCAF5DE00F82AF2 /* CategoriesVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoriesVC.swift; sourceTree = "<group>"; };
 		89AD5EB61FCAF5DE00F82AF2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		89AD5EB81FCAF5DE00F82AF2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		89AD5EBB1FCAF5DE00F82AF2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -47,6 +48,7 @@
 		89AD5ECD1FCAF5DE00F82AF2 /* swagUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = swagUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		89AD5ED11FCAF5DE00F82AF2 /* swagUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = swagUITests.swift; sourceTree = "<group>"; };
 		89AD5ED31FCAF5DE00F82AF2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		89C165491FCB001300E59D4D /* CategoryCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -97,8 +99,10 @@
 		89AD5EB01FCAF5DE00F82AF2 /* swag */ = {
 			isa = PBXGroup;
 			children = (
+				89C165481FCAFF9800E59D4D /* View */,
+				89C165471FCAFF9300E59D4D /* Model */,
+				89C165461FCAFF8D00E59D4D /* Controller */,
 				89AD5EB11FCAF5DE00F82AF2 /* AppDelegate.swift */,
-				89AD5EB31FCAF5DE00F82AF2 /* ViewController.swift */,
 				89AD5EB51FCAF5DE00F82AF2 /* Main.storyboard */,
 				89AD5EB81FCAF5DE00F82AF2 /* Assets.xcassets */,
 				89AD5EBA1FCAF5DE00F82AF2 /* LaunchScreen.storyboard */,
@@ -123,6 +127,29 @@
 				89AD5ED31FCAF5DE00F82AF2 /* Info.plist */,
 			);
 			path = swagUITests;
+			sourceTree = "<group>";
+		};
+		89C165461FCAFF8D00E59D4D /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				89AD5EB31FCAF5DE00F82AF2 /* CategoriesVC.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		89C165471FCAFF9300E59D4D /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		89C165481FCAFF9800E59D4D /* View */ = {
+			isa = PBXGroup;
+			children = (
+				89C165491FCB001300E59D4D /* CategoryCell.swift */,
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -259,7 +286,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				89AD5EB41FCAF5DE00F82AF2 /* ViewController.swift in Sources */,
+				89AD5EB41FCAF5DE00F82AF2 /* CategoriesVC.swift in Sources */,
+				89C1654A1FCB001300E59D4D /* CategoryCell.swift in Sources */,
 				89AD5EB21FCAF5DE00F82AF2 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
